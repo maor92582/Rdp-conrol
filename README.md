@@ -45,8 +45,3 @@
 * `get_keyboard_presses.py`:  סקריפט לקבלת הקלדות מקלדת וביצוע.
 
 
-
-יש להתקין את הספריות הבאות בשני הצדדים (Attacker & Client):
-
-```bash
-pip install pyautogui Pillow keyboard mouse pynput filelock
