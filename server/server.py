@@ -2,7 +2,7 @@ import socket
 import os
 import time
 from filelock import FileLock
-lock_path = r"C:\Users\maori\Documents\Rdp\locks\attacker.lock"
+lock_path = r"C:\Users\maori\Documents\Rdp\locks\attacker.lock" #כדי שלא יהיה קטע קריטי
 filedata=b''
 s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind(('0.0.0.0',65534))

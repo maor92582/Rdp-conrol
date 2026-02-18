@@ -2,9 +2,11 @@ import pyautogui
 import socket
 import struct
 import time
-def func():
+def func(): #send mouse position
     s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect(("192.168.1.155",65255))
+    other_ip = "192.168.1.155"
+    port=65510
+    s.connect((other_ip,port))
     while True:
         try:
             x=pyautogui.position()

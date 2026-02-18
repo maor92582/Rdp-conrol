@@ -1,8 +1,9 @@
 import socket
 from pynput import mouse
-import time
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(("192.168.1.155",65155))
+other_ip = "127.0.0.1"
+port=65155
+s.connect((other_ip,port))
 done=False
 def se(x,y,button,pressed):
     if(pressed):

@@ -1,7 +1,8 @@
 import pyautogui
 import socket
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(('0.0.0.0',65510))
+port=65510
+s.bind(('0.0.0.0',port))
 s.listen()
 c,ip=s.accept()
 print(ip)
