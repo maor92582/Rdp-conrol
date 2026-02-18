@@ -1,12 +1,12 @@
 import os
 import threading
 import time
-def pg():
+def get_mouse_clicks():
     try:
-        os.system('python C:\\Users\\maori\\Documents\\Rdp\\client\\pg.py')
+        os.system('python C:\\Users\\maori\\Documents\\Rdp\\client\\get_mouse_clicks.py')
     except:
         time.sleep(2)
-        pg()
+        get_mouse_clicks()
 
 def client():
     try:
@@ -16,18 +16,18 @@ def client():
         client()
 def kb():
     try:
-        os.system('python C:\\Users\\maori\\Documents\\Rdp\\client\\kbg.py')
+        os.system('python C:\\Users\\maori\\Documents\\Rdp\\client\\get_keyboard_presses.py')
     except:
         time.sleep(2)
         kb()
 def mouse():
     try:
-        os.system('python C:\\Users\\maori\\Documents\\Rdp\\client\\gm.py')
+        os.system('python C:\\Users\\maori\\Documents\\Rdp\\client\\get_mouse_postion.py')
     except:
         time.sleep(2)
         mouse()
 # יצירת תהליכים מבלי להריץ אותם מיד
-t1 = threading.Thread(target=pg)  # תהליך ראשון
+t1 = threading.Thread(target=get_mouse_clicks)  # תהליך ראשון
 t2 = threading.Thread(target=client)  # תהליך שני
 t3 = threading.Thread(target=kb)  # תהליך שני
 t4 = threading.Thread(target=mouse)  # תהליך שני

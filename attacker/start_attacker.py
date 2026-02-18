@@ -7,7 +7,7 @@ import time
 def app():
     while True:
         try:
-            os.system('python C:\\Users\\maori\\Documents\\Rdp\\server\\app.py')
+            os.system('python C:\\Users\\maori\\Documents\\Rdp\\attacker\\app.py')
             
         except:
             time.sleep(2)
@@ -16,27 +16,27 @@ def app():
 def server():
     while True:
         try:
-            os.system('python C:\\Users\\maori\\Documents\\Rdp\\server\\server.py')
+            os.system('python C:\\Users\\maori\\Documents\\Rdp\\attacker\\get_frames.py')
             print(1)
         except:
             time.sleep(2)
 def kb():
     while True:
         try:
-            os.system('python C:\\Users\\maori\\Documents\\Rdp\\server\\kbs.py')
+            os.system('python C:\\Users\\maori\\Documents\\Rdp\\attacker\\send_key_press.py')
         except:
             time.sleep(2)
 
 def mouse():
     while True:
         try:
-            os.system('python C:\\Users\\maori\\Documents\\Rdp\\server\\sm.py')
+            os.system('python C:\\Users\\maori\\Documents\\Rdp\\attacker\\send_mouse_p.py')
         except:
             time.sleep(2)
 def mousec():
     while True:
         try:
-            os.system('python C:\\Users\\maori\\Documents\\Rdp\\server\\mc.py')
+            os.system('python C:\\Users\\maori\\Documents\\Rdp\\attacker\\send_mouse_b.py')
         except:
             time.sleep(2)
 # יצירת תהליכים מבלי להריץ אותם מיד
