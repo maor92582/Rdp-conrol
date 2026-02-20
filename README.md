@@ -1,8 +1,8 @@
 # 🖥️ Rdp-Control (Hybrid TCP/UDP Remote Desktop)
 
-> **מערכת שליטה מרחוק בעלת ביצועים גבוהים ב-Python**
+> **מערכת לשליטה מרחוק  ב-Python**
 >
-> המערכת משלבת תקשורת TCP לשליטה אמינה במקלדת ובעכבר, ותקשורת UDP לשידור מסך בזמן אמת (Low Latency Streaming).
+> מערכת שנועדה לשליטה בין מחשבים מרחוק, המערכת משלבת תקשורת TCP לשליטה אמינה במקלדת ובעכבר, ותקשורת UDP לשידור מסך בזמן אמת (Low Latency Streaming).
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue?style=for-the-badge&logo=python)
 ![Architecture](https://img.shields.io/badge/Architecture-Hybrid%20TCP%2FUDP-red?style=for-the-badge)
@@ -14,11 +14,11 @@
 
 הפרויקט בנוי בארכיטקטורת **Client-Server** חכמה המנצלת את היתרונות של שני הפרוטוקולים:
 
-### 1. 📡 ערוץ שידור מסך (Streaming)
+### 1. 📡 ערוץ שידור מסך
 * **פרוטוקול:** UDP (User Datagram Protocol).
 * **למה UDP?** שידור וידאו בזמן אמת דורש מהירות מקסימלית. ב-UDP אין אמינות שנוצרת בעזרת לחיצת היד המשולשת, מה שמאפשר להזרים פריימים (FPS) בקצב גבוה ללא השהיות מיותרות גם אם לא כל הפריימים יגיעו.
 
-### 2. 🎮 ערוץ שליטה ופקודות (Command & Control)
+### 2. 🎮 ערוצי שליטה 
 * **פרוטוקול:** TCP (Transmission Control Protocol)
 * **למה TCP?** בפקודות שליטה (כמו לחיצת עכבר, הזזת עכבר, או הקלדת סיסמה) האמינות היא קריטית. TCP מבטיח שכל פקודה תגיע ליעדה בסדר הנכון ובשלמותה.
 
@@ -39,7 +39,7 @@
 המחשב עליו מתבצעת השליטה.
 * `start_server.py`: סקריפט ההרצה הראשי.
 * `client.py`: מנהל את החיבור לשרת לשליחת הפריימים.
-* `mini_screenshot.py`: אחראי על צילום המסך, דחיסה .
+* `mini_screenshot.py`: אחראי על צילום המסך, דחיסת התמונות .
 * `get_mouse_clicks.py`: סקריפט לקבלת הקלקות עכבר וביצוע.
 * `get_mouse_postion.py`:  סקריפט לקבלת מיקום עכבר והזזה.
 * `get_keyboard_presses.py`:  סקריפט לקבלת הקלדות מקלדת וביצוע.
