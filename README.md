@@ -1,4 +1,4 @@
-# 🖥️ Rdp-Control (Hybrid TCP/UDP Remote Desktop)
+# 🖥️ Rdp-Control (Remote Desktop)
 
 > **מערכת לשליטה מרחוק  ב-Python**
 >
