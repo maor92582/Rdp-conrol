@@ -2,7 +2,8 @@
 
 > **מערכת לשליטה מרחוק  ב-Python**
 >
-> מערכת שנועדה לשליטה בין מחשבים מרחוק, המערכת משלבת תקשורת TCP לשליטה אמינה במקלדת ובעכבר, ותקשורת UDP לשידור מסך בזמן אמת (Low Latency Streaming).
+> מערכת שנועדה לשליטה בין מחשבים מרחוק.
+>  המערכת משלבת תקשורת TCP לשליטה אמינה במקלדת ובעכבר, ותקשורת UDP לשידור מסך בזמן אמת (Low Latency Streaming).
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue?style=for-the-badge&logo=python)
 ![Architecture](https://img.shields.io/badge/Architecture-Hybrid%20TCP%2FUDP-red?style=for-the-badge)
